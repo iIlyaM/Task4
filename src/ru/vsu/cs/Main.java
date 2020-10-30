@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) 
     {
         double n = readValue("N");
-        double sum = calculatePow(n);
+        double sum = calculateSum(n);
         printSum(sum);
     }
 
@@ -26,12 +26,12 @@ public class Main {
         return pow;
     }
 
-    private static double calculatePow(double n)
+    private static double calculateSum(double n)
     {
         double sum = 0;
         for(int i = 1; i <= n; i++)
         {
-            sum += raiseANumber(i, n- i + 1);
+            sum += raiseANumber(i, n - i + 1);
         }
         return sum;
     }

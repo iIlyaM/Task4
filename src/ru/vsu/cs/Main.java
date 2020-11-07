@@ -18,9 +18,11 @@ public class Main {
         return scan.nextDouble();
     }
 
-    private static double raiseANumber(double p, double k) {
+    private static double raiseANumber(double p, double k) 
+    {
         double pow = 1;
-        for (int i = 1; i <= k; i++) {
+        for (int i = 1; i <= k; i++) 
+        {
             pow *= p;
         }
         return pow;
